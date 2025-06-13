@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accueil | Mes Projets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            margin: 0;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            color: #e0e0e0;
+        }
+        .projects {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.18);
+            padding: 32px 28px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.04);
+            box-shadow: 0 16px 40px 0 rgba(31,38,135,0.37);
+        }
+        .project-title {
+            font-size: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 12px;
+            color: #ff512f;
+        }
+        .project-desc {
+            font-size: 1rem;
+            color: #f3f3f3;
+            margin-bottom: 18px;
+        }
+        .project-link {
+            display: inline-block;
+            padding: 10px 22px;
+            background: linear-gradient(90deg, #ff512f, #dd2476);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background 0.2s;
+        }
+        .project-link:hover {
+            background: linear-gradient(90deg, #dd2476, #ff512f);
+        }
+        @media (max-width: 700px) {
+            .projects {
+                flex-direction: column;
+                gap: 24px;
+            }
+            h1 {
+                font-size: 2.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon espace projets !</h1>
+        <p>Découvre mes deux créations principales ci-dessous :</p>
+    </header>
+    <section class="projects">
+        <div class="project-card">
+            <div class="project-title">Projet 1</div>
+            <div class="project-desc">Une brève description de ton premier projet. Explique ce qu'il fait ou pourquoi il est cool !</div>
+            <a href="#" class="project-link">Voir le projet</a>
+        </div>
+        <div class="project-card">
+            <div class="project-title">Projet 2</div>
+            <div class="project-desc">Une brève description de ton second projet. Mets en avant ses fonctionnalités ou son originalité !</div>
+            <a href="#" class="project-link">Voir le projet</a>
+        </div>
+    </section>
+</body>
+</html>
